@@ -1,0 +1,16 @@
+name: ExplosionControl
+version: '${version}'
+api-version: '1.21.11'
+description: Controls block damage and entity damage caused by explosions.
+author: kubotan
+main: space.gorogoro.explosioncontrol.ExplosionControl
+
+commands:
+  explosioncontrol:
+    description: Reloads config.yml.
+    usage: /explosioncontrol reload
+
+permissions:
+  explosioncontrol.reload:
+    description: Allows using /explosioncontrol reload.
+    default: op

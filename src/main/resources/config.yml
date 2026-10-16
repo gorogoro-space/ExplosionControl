@@ -1,0 +1,100 @@
+# Worlds where this plugin works. If the list is empty, it works in all worlds.
+# このプラグインが動くワールド。空にすると、すべてのワールドで動きます
+worlds:
+  - world
+  - world_the_end
+  - world_nether
+  - world_mining
+  - world_mining_nether
+  - world_creative
+
+# Settings for each type of explosion.
+#   break-blocks: whether the explosion breaks blocks
+#   damage.player / mob / item / decoration: whether the explosion damages players, mobs,
+#     dropped items, and decorations (paintings, item frames, armor stands)
+# Types:
+#   creeper, tnt, tnt-minecart, fireball (ghast fireballs, fire charges),
+#   wither (the explosion when a wither is spawned, and wither skulls), end-crystal,
+#   other (beds, respawn anchors, explosions caused by other plugins, etc.)
+# 爆発の種類ごとの設定
+#   break-blocks: 地形を壊すか
+#   damage.player / mob / item / decoration: プレイヤー・Mob・落ちているアイテム・飾り(絵画・額縁・防具立て)に
+#     ダメージを与えるか
+# 種類:
+#   creeper(クリーパー)、tnt(TNT)、tnt-minecart(TNT 付きトロッコ)、fireball(ガストの火の玉・ファイアチャージ)、
+#   wither(ウィザーを出現させたときの爆発とウィザーの頭)、end-crystal(エンドクリスタル)、
+#   other(ベッド・リスポーンアンカー・ほかのプラグインによる爆発など)
+explosions:
+  creeper:
+    break-blocks: false
+    damage:
+      player: true
+      mob: true
+      item: true
+      decoration: false
+  tnt:
+    break-blocks: false
+    damage:
+      player: true
+      mob: true
+      item: true
+      decoration: false
+  tnt-minecart:
+    break-blocks: false
+    damage:
+      player: true
+      mob: true
+      item: true
+      decoration: false
+  fireball:
+    break-blocks: false
+    damage:
+      player: true
+      mob: true
+      item: true
+      decoration: false
+  wither:
+    break-blocks: false
+    damage:
+      player: true
+      mob: true
+      item: true
+      decoration: false
+  end-crystal:
+    break-blocks: false
+    damage:
+      player: true
+      mob: true
+      item: true
+      decoration: false
+  other:
+    break-blocks: false
+    damage:
+      player: true
+      mob: true
+      item: true
+      decoration: false
+
+# Prevent endermen from picking up or placing blocks.
+# エンダーマンがブロックを持ち上げたり置いたりできないようにします
+enderman:
+  prevent-pickup: true
+  prevent-place: true
+
+# Language of messages: en (English) or ja (Japanese). Messages can be edited below.
+# To use another language, add a section such as "fr:" under messages and set language: fr
+# (missing messages are shown in English).
+# メッセージの言語: en(英語)か ja(日本語)。文は下で書き換えられます
+# ほかの言語を使うときは、messages の下に「fr:」などを書き足して language: fr にします
+# (書いていない項目は英語で表示します)
+language: en
+
+messages:
+  en:
+    reloaded: "Reloaded config.yml."
+    no-permission: "You do not have permission to use this command."
+    usage: "Usage: /explosioncontrol reload"
+  ja:
+    reloaded: "config.yml を読み込み直しました。"
+    no-permission: "このコマンドを使う権限がありません。"
+    usage: "使い方: /explosioncontrol reload"
